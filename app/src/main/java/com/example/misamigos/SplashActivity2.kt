@@ -14,6 +14,7 @@ class SplashActivity2 : AppCompatActivity() {
         Glide.with(applicationContext).load(R.drawable.splaht).into(fondi)
         startTimer()
     }
+    // se cre una funcion para crear un timer par que se pase en un cierto tiempo a la otra activity
     fun startTimer(){
         object: CountDownTimer(5000,1000){
             override fun onTick(p0: Long) {
